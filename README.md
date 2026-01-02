@@ -111,22 +111,6 @@ Choose your browser and follow the steps:
 
 </details>
 
-<details>
-<summary><b>🦊 Mozilla Firefox</b></summary>
-
-1. Open Firefox and navigate to:
-```
-   about:debugging#/runtime/this-firefox
-```
-2. Click **"Load Temporary Add-on..."**
-3. Navigate to the `haoroshi-deeptection` folder
-4. Select the `manifest.json` file
-5. The extension icon should appear in your toolbar ✅
-
-> **Note**: In Firefox, temporary extensions are removed when you close the browser. For permanent installation, you'll need to package and sign the extension.
-
-</details>
-
 ### Step 3: Verify Installation
 
 ✅ You should see the HaoroShi Deeptection icon in your browser toolbar  
