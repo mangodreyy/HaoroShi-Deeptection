@@ -14,9 +14,9 @@ A real-time deepfake detection browser extension powered by a hybrid CNN-Transfo
 - 🙏 Acknowledgments
 
 ## 📑 Table of Contents
-- [🌟 Features](#features)
-- [🚀 Quick Start](#quick-start)
-- [📦 Installation](#installation)
+- [🌟 Features](##features)
+- [🚀 Quick Start](##quick-start)
+- [📦 Installation]#installation)
 - [💡 Usage](#usage)
 - [🔬 How It Works](#how-it-works)
 - [🏗️ Model Architecture](#model-architecture)
