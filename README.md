@@ -4,7 +4,7 @@ A real-time deepfake detection browser extension powered by a hybrid CNN-Transfo
 ## 📑 Table of Contents
 - [🌟 Features](#features)
 - [🚀 Quick Start](#quick-start)
-- [📦 Installation]#installation)
+- [📦 Installation](#installation)
 - [💡 Usage](#usage)
 - [🔬 How It Works](#how-it-works)
 - [🏗️ Model Architecture](#model-architecture)
@@ -14,15 +14,24 @@ A real-time deepfake detection browser extension powered by a hybrid CNN-Transfo
 - [🙏 Acknowledgments](#acknowledgments)
 
 ## 🌟 Features
-- **Real-time Detection**: Analyze images and videos directly in your browser
+- **Real-time Detection**: Analyse images and videos directly in your browser
 - **Triple Mode Operation**:
-  - 🌐 **Webpage Mode**: Analyzes images embedded in web pages (source images)
+  - 🌐 **Webpage Mode**: Analyses images embedded in web pages (source images)
   - 📸 **Screenshot Mode**: Captures and analyses screen snapshots
   - 🎥 **Video Mode**: Processes video content frame-by-frame
-- **Advanced AI Model**: Hybrid CNN-Transformer architecture combining local and global feature analysis
+- **Intergrated DL Model**: Hybrid CNN-Transformer architecture combining local and global feature analysis
 - **Privacy-First**: All processing happens locally in your browser
 - **Toggleable Interface**: Easy-to-use movable overlay that can be activated/deactivated
 - **PDF Reports**: Generate detailed analysis reports with confidence scores
+- **Statistics & Analytics**: Track your scanning history with detailed metrics
+  - View total scans, fake/real detection counts
+  - Monitor fake rate percentage
+  - Time-range filtering (day, week, month, year)
+  - Visual charts showing detection trends
+- **Feedback System**: Provide corrections and confirmations on detection results
+  - Help improve the model accuracy
+  - Review your feedback history
+  - Export data for analysis
 
 ## 🚀 Quick Start
 Get started with HaoroShi Deeptection in 3 simple steps:
@@ -128,6 +137,86 @@ Choose your browser and follow the steps:
 
 
 ## 💡 Usage
+1. **Activate the Extension**
+   - Click the HaoroShi Deeptection icon in your browser toolbar
+   - The movable overlay will appear on your current page
+   - You can drag it to any position on the screen
+
+2. **Select Detection Mode**
+
+   The extension offers three analysis modes:
+
+   #### 🌐 Webpage Mode
+   - Automatically scans all images on the current webpage
+   - Detects images from page source (HTML `<img>` tags)
+   - Click "Analyze Page" to scan all images
+   - Results show for each detected image
+
+   #### 📸 Screenshot Mode
+   - Captures the visible portion of your screen
+   - Useful for analyzing content in videos, apps, or protected images
+   - Click "Capture Screenshot" button
+   - The screenshot is analyzed immediately
+
+   #### 🎥 Video Mode
+   - Analyzes video content frame-by-frame
+   - Works with embedded videos (YouTube, social media, etc.)
+   - Click "Analyze Video" to start
+   - Real-time analysis as the video plays
+
+3. **Interpret Results**
+
+   For each analysis, you'll see:
+   - **Confidence Score**: Percentage indicating Real vs. Fake
+   - **Classification**: 
+     - 🟢 **REAL** - Likely authentic (green)
+     - 🔴 **FAKE** - Likely manipulated (red)
+     - 🟡 **UNCERTAIN** - Low confidence (yellow)
+   - **Artifact Score**: Detection of manipulation artifacts
+   - **Processing Time**: How long the analysis took
+
+4. **Provide Feedback** (Optional)
+   - If you believe the detection is incorrect, click "Provide Feedback"
+   - Choose:
+     - ✅ **Confirm**: The detection was correct
+     - ❌ **Correct**: The detection was wrong (provide the correct label)
+   - Your feedback helps improve accuracy
+
+5. **View Statistics**
+   - Click the extension icon and navigate to "Statistics & Feedbacks"
+   - View your scanning history:
+     - **Total Scans**: Number of analyses performed
+     - **Total Images/Videos**: Breakdown by content type
+     - **Fake Detections**: How many fakes were detected
+     - **Real Detections**: How many real images were detected
+     - **Fake Rate**: Percentage of scans that were fake
+   - Filter by time range (Today, This Week, This Month, Whole Year)
+   - View visual charts showing detection trends over time
+
+6. **Manage Your Data**
+   - **Export Data**: Download your statistics and feedback history
+   - **Clear Stats**: Reset your scan statistics
+   - **Clear Feedbacks**: Remove all feedback history
+   - **Clear All Data**: Complete data reset
+  
+## 📊 Statistics & Analytics
+<img width="1577" height="896" alt="image" src="https://github.com/user-attachments/assets/c18979bd-fdf3-415c-b17a-8cd499693cb7" />
+
+HaoroShi Deeptection tracks your usage to help you understand your scanning patterns:
+### Scan Metrics
+- **Total Scans**: Cumulative number of analyses
+- **Content Type Breakdown**: Images vs. Videos analyzed
+- **Detection Results**: Real vs. Fake counts
+- **Fake Rate**: Percentage of content detected as fake
+- **Time-based Filtering**: View statistics by day, week, month, or year
+
+### Feedback System
+- **Confirmations**: Cases where you agreed with the detection
+- **Corrections**: Cases where you provided the correct label
+- **Export Feature**: Download your complete history as JSON/CSV
+
+### Privacy Note
+All statistics are stored **locally in your browser**. No data is sent to external servers. You can clear your history at any time using the "Clear All Data" button.
 
 ## 🔬 How It Works
 
@@ -147,3 +236,8 @@ The deepfake detection model uses a hybrid CNN-Transformer architecture:
 ## 📈 Performance
 
 ## Acknowledgement
+- Celeb-DF v2 Dataset: Li et al. - Celeb-DF: A Large-scale Challenging Dataset for DeepFake Forensics
+- JamieWithofs Dataset: Available on Hugging Face
+- EfficientNet: Tan & Le - EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks
+- Vision Transformer: Dosovitskiy et al. - An Image is Worth 16x16 Words
+- ONNX Runtime: Microsoft - ONNX Runtime Web
