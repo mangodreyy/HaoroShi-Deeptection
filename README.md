@@ -1,5 +1,5 @@
 # HaoroShi-Deeptection 🔍
-A real-time deepfake detection browser extension powered by a hybrid CNN-Transformer architecture. Haoroshi Deeptection uses advanced machine learning to analyze images and videos directly in your browser, helping identify manipulated media content.
+A real-time deepfake detection browser extension powered by a hybrid CNN-Transformer architecture. Haoroshi Deeptection uses advanced machine learning to analyse images and videos directly in your browser, helping identify manipulated media content.
 
 ## 📑 Table of Contents
 - [🌟 Features](#features)
@@ -37,7 +37,7 @@ A real-time deepfake detection browser extension powered by a hybrid CNN-Transfo
 Get started with HaoroShi Deeptection in 3 simple steps:
 1. **Download** the extension files from this repository
 2. **Load** the extension in your browser (see [Installation](#installation) for browser-specific steps)
-3. **Activate** by clicking the extension icon and start analyzing!
+3. **Activate** by clicking the extension icon and start analysing!
 
 
 ## 📦 Installation
@@ -149,19 +149,19 @@ Choose your browser and follow the steps:
    #### 🌐 Webpage Mode
    - Automatically scans all images on the current webpage
    - Detects images from page source (HTML `<img>` tags)
-   - Click "Analyze Page" to scan all images
+   - Click "Analyse Page" to scan all images
    - Results show for each detected image
 
    #### 📸 Screenshot Mode
    - Captures the visible portion of your screen
-   - Useful for analyzing content in videos, apps, or protected images
+   - Useful for analysing content in videos, apps, or protected images
    - Click "Capture Screenshot" button
-   - The screenshot is analyzed immediately
+   - The screenshot is analysed immediately
 
    #### 🎥 Video Mode
-   - Analyzes video content frame-by-frame
+   - Analyses video content frame-by-frame
    - Works with embedded videos (YouTube, social media, etc.)
-   - Click "Analyze Video" to start
+   - Click "Analyse Video" to start
    - Real-time analysis as the video plays
 
 3. **Interpret Results**
@@ -204,7 +204,7 @@ Choose your browser and follow the steps:
 HaoroShi Deeptection tracks your usage to help you understand your scanning patterns:
 ### Scan Metrics
 - **Total Scans**: Cumulative number of analyses
-- **Content Type Breakdown**: Images vs. Videos analyzed
+- **Content Type Breakdown**: Images vs. Videos analysed
 - **Detection Results**: Real vs. Fake counts
 - **Fake Rate**: Percentage of content detected as fake
 - **Time-based Filtering**: View statistics by day, week, month, or year
@@ -243,10 +243,10 @@ HaoroShi Deeptection uses a sophisticated multi-step process to detect deepfakes
 2. **Face Detection** (using face-api.js)
    - Identifies all faces in the image
    - Extracts facial landmarks (eyes, nose, mouth)
-   - Normalizes face orientation and size
+   - Normalises face orientation and size
 
 3. **Feature Extraction** (CNN Backbone)
-   - Uses EfficientNet to analyze local patterns
+   - Uses EfficientNet to analyse local patterns
    - Detects texture anomalies, blending artifacts
    - Identifies unnatural skin textures, lighting inconsistencies
 
@@ -329,7 +329,7 @@ The deepfake detection model uses a hybrid CNN-Transformer architecture:
 - Transfer learning with EfficientNet-B0 (ImageNet pretrained)
 - Multi-task learning (classification + artifact detection)
 - Data augmentation for robustness
-- Label smoothing for regularization
+- Label smoothing for regularisation
 
 ## 📈 Performance
 ### Image Detection (ImageModel.onnx)
@@ -345,10 +345,10 @@ The deepfake detection model uses a hybrid CNN-Transformer architecture:
 - **Validation F1-Score**: 84.93%
 - **Dataset**: Evaluated on video frame sequences
 
-> **Note**: Performance may vary on different datasets and real-world content. The models perform best on high-quality, face-forward images/videos. Video detection analyzes temporal patterns across frames, which can be more challenging than single-image detection.
+> **Note**: Performance may vary on different datasets and real-world content. The models perform best on high-quality, face-forward images/videos. Video detection analyses temporal patterns across frames, which can be more challenging than single-image detection.
 
 ## 🙏 Acknowledgments
-This project utilizes the following datasets, research contributions, and software tools:
+This project utilises the following datasets, research contributions, and software tools:
 
 **Datasets:**
 - Li, Y., Yang, X., Sun, P., Qi, H., & Lyu, S. (2020). *Celeb-DF (v2): A large-scale challenging dataset for deepfake forensics* [Data set]. arXiv. https://arxiv.org/abs/1909.12962
