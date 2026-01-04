@@ -1,8 +1,18 @@
 # HaoroShi-Deeptection 🔍
 A real-time deepfake detection browser extension powered by a hybrid CNN-Transformer architecture. Haoroshi Deeptection uses advanced machine learning to analyse images and videos directly in your browser, helping identify manipulated media content.
-## ⚠️ Important Notes
-- **Screenshot Mode**: Confidence scores may vary depending on the area you crop - ensure faces are clearly visible and well-centered for best results
-- **💡 Tip**: If the confidence score seems wrong, try cropping closer around the face instead of capturing from afar
+
+### ⚠️ Important Tips for Best Results
+**📸 Screenshot Mode:**
+- Confidence scores may vary depending on the area you crop
+- **Tip:** If the confidence seems wrong, crop closer around the face instead of from afar
+- Ensure faces are clearly visible and centered
+
+**🎥 Video Mode:**
+- Put the video in **fullscreen** (e.g., YouTube fullscreen) for best results
+- Detection takes approximately **20 seconds**
+- **Stay on the page** while the extension is recording
+- Once analysis starts, you can switch to other tabs
+- Ensure good lighting and clear facial visibility in the video
 
 ## 📑 Table of Contents
 
