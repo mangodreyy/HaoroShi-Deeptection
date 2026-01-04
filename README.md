@@ -47,10 +47,7 @@ Get started with HaoroShi Deeptection in 3 simple steps:
 - 
 ### Step 1: Download the Extension
 ```bash
-# Option 1: Clone the repository
-git clone https://github.com/yourusername/haoroshi-deeptection.git
-
-# Option 2: Download ZIP
+# Download ZIP
 # Click "Code" → "Download ZIP" on GitHub, then extract
 ```
 
@@ -91,9 +88,16 @@ Choose your browser and follow the steps:
    edge://extensions/
 ```
 2. Enable **Developer mode** (toggle in left sidebar)
+<img width="1920" height="1080" alt="5" src="https://github.com/user-attachments/assets/eb89a6da-d90f-42f2-adaf-c19f7b059296" />
+
 3. Click **"Load unpacked"**
+<img width="1920" height="1080" alt="6" src="https://github.com/user-attachments/assets/1d8b6e94-a7b8-4d62-9a5b-a8b04d0394ab" />
+
 4. Select the `haoroshi-deeptection` folder
+<img width="1920" height="1080" alt="3" src="https://github.com/user-attachments/assets/a76edb36-a934-42d4-83b1-8a1811ce5fb0" />
+
 5. The extension icon should appear in your toolbar ✅
+<img width="1920" height="1080" alt="7" src="https://github.com/user-attachments/assets/838dab7b-f74b-4060-8295-1f496b8d4946" />
 
 </details>
 
@@ -105,17 +109,24 @@ Choose your browser and follow the steps:
    brave://extensions/
 ```
 2. Enable **Developer mode** (toggle in top-right corner)
-3. Click **"Load unpacked"**
-4. Select the `haoroshi-deeptection` folder
-5. The extension icon should appear in your toolbar ✅
+<img width="1920" height="1080" alt="8" src="https://github.com/user-attachments/assets/f2d79362-3436-4ce5-98e1-f057773d5132" />
 
+3. Click **"Load unpacked"**
+<img width="1920" height="1080" alt="9" src="https://github.com/user-attachments/assets/8770cd10-7a89-4d73-b4fb-c032f13b550d" />
+
+4. Select the `haoroshi-deeptection` folder
+<img width="1920" height="1080" alt="3" src="https://github.com/user-attachments/assets/c8de29c3-3a57-4ebf-bb53-ff9ce1978b21" />
+
+5. The extension icon should appear in your toolbar ✅
+<img width="1920" height="1080" alt="10" src="https://github.com/user-attachments/assets/565c4f5e-81d3-47fd-8f18-a5100a6a80ac" />
 </details>
 
 ### Step 3: Verify Installation
-
 ✅ You should see the HaoroShi Deeptection icon in your browser toolbar  
 ✅ Click the icon to activate/deactivate the extension  
+<img width="956" height="688" alt="image" src="https://github.com/user-attachments/assets/6d010894-a9f6-4665-918e-85dee96fefaf" />
 ✅ A movable overlay should appear on any webpage when activated
+<img width="956" height="469" alt="image" src="https://github.com/user-attachments/assets/3c35e667-7c89-485d-98c8-97007a25c029" />
 
 > **Note**: If the icon doesn't appear, click the puzzle piece icon (🧩) in your toolbar to pin the extension.
 
