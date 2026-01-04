@@ -6,11 +6,11 @@ A real-time deepfake detection browser extension powered by a hybrid CNN-Transfo
 - [🚀 Quick Start](#quick-start)
 - [📦 Installation](#installation)
 - [💡 Usage](#usage)
+- [📊 Statistics & Analytics](#statistics--analytics)
 - [🔬 How It Works](#how-it-works)
 - [🏗️ Model Architecture](#model-architecture)
-- [📊 Training Details](#training-details)
+- [📚 Training Details](#training-details)
 - [📈 Performance](#performance)
-- [🛠️ Development](#development)
 - [🙏 Acknowledgments](#acknowledgments)
 
 ## 🌟 Features
@@ -41,11 +41,22 @@ Get started with HaoroShi Deeptection in 3 simple steps:
 
 
 ## 📦 Installation
-### Pre-Requisites
-- A Chromium-based browser (Chrome, Edge, Brave)
-- Download or clone this repository to your computer
-- 
+### Prerequisites
+- A supported browser: Chrome, Edge, Brave, or Firefox
+- No additional software required
+
 ### Step 1: Download the Extension
+
+1. Go to the [**Releases**](https://github.com/yourusername/haoroshi-deeptection/releases) page
+<img width="1920" height="1080" alt="11" src="https://github.com/user-attachments/assets/a1b855b2-5fc8-439b-a586-1c81369992d1" />
+<img width="1920" height="1080" alt="12" src="https://github.com/user-attachments/assets/c6658add-c732-4858-8f34-da5f0755a001" />
+2. Download the **latest release** (`.zip` file)
+3. Extract the downloaded ZIP file to a folder on your computer
+<img width="1920" height="1080" alt="13" src="https://github.com/user-attachments/assets/69bb8402-038d-47b9-b1d5-3a7b21aeb409" />
+
+> **💡 Tip**: Extract to a permanent location (e.g., `Documents/Extensions/HaoroShi-Deeptection`) as the extension needs to stay in this folder to work.
+
+**Alternative: Clone the Repository** (For Developers)
 ```bash
 # Download ZIP
 # Click "Code" → "Download ZIP" on GitHub, then extract
@@ -59,23 +70,18 @@ Choose your browser and follow the steps:
 <summary><b>🔵 Google Chrome</b></summary>
 
 1. Open Chrome and navigate to `chrome://extensions/`:
-
    <img width="950" alt="Chrome Extensions Page" src="https://github.com/user-attachments/assets/f5cfb2a7-6ab7-4e1e-96e4-5deb044bbf26" />
 
 2. Enable **Developer mode** (toggle in top-right corner):
-
    <img width="1920" alt="Enable Developer Mode" src="https://github.com/user-attachments/assets/31ca84bd-7a7e-4e14-8e36-9fff03b3c3ae" />
 
 3. Click **"Load unpacked"**:
-
    <img width="1920" alt="Load Unpacked Button" src="https://github.com/user-attachments/assets/30a39492-27d9-4486-a94c-cec4cadb8d6a" />
 
 4. Navigate to the `haoroshi-deeptection` folder, then select the **`dist`** folder:
-
-   <img width="1920" alt="Select dist folder" src="https://github.com/user-attachments/assets/cf3995cd-c3b8-436c-9c52-560f3bef40a0" />
+<img width="1920" height="1080" alt="Step 1" src="https://github.com/user-attachments/assets/d52aa3f7-11ff-4e16-88be-378837cb1a5d" />
 
 5. The extension should now be loaded! The icon will appear in your toolbar ✅
-
    <img width="952" alt="Extension loaded successfully" src="https://github.com/user-attachments/assets/6aee2ace-e02d-4ab5-a55e-068dbeccee0e" />
 
 </details>
@@ -94,7 +100,7 @@ Choose your browser and follow the steps:
 <img width="1920" height="1080" alt="6" src="https://github.com/user-attachments/assets/1d8b6e94-a7b8-4d62-9a5b-a8b04d0394ab" />
 
 4. Select the `haoroshi-deeptection` folder
-<img width="1920" height="1080" alt="3" src="https://github.com/user-attachments/assets/a76edb36-a934-42d4-83b1-8a1811ce5fb0" />
+<img width="1920" height="1080" alt="Step 1" src="https://github.com/user-attachments/assets/fdbefd0c-6350-4203-93ff-b25107a68e56" />
 
 5. The extension icon should appear in your toolbar ✅
 <img width="1920" height="1080" alt="7" src="https://github.com/user-attachments/assets/838dab7b-f74b-4060-8295-1f496b8d4946" />
@@ -115,7 +121,7 @@ Choose your browser and follow the steps:
 <img width="1920" height="1080" alt="9" src="https://github.com/user-attachments/assets/8770cd10-7a89-4d73-b4fb-c032f13b550d" />
 
 4. Select the `haoroshi-deeptection` folder
-<img width="1920" height="1080" alt="3" src="https://github.com/user-attachments/assets/c8de29c3-3a57-4ebf-bb53-ff9ce1978b21" />
+<img width="1920" height="1080" alt="Step 1" src="https://github.com/user-attachments/assets/04abf66c-d4d7-4bbe-b93e-0fc287cede7f" />
 
 5. The extension icon should appear in your toolbar ✅
 <img width="1920" height="1080" alt="10" src="https://github.com/user-attachments/assets/565c4f5e-81d3-47fd-8f18-a5100a6a80ac" />
@@ -138,7 +144,6 @@ Choose your browser and follow the steps:
    - You can drag it to any position on the screen
 
 2. **Select Detection Mode**
-
    The extension offers three analysis modes:
 
    #### 🌐 Webpage Mode
@@ -160,7 +165,6 @@ Choose your browser and follow the steps:
    - Real-time analysis as the video plays
 
 3. **Interpret Results**
-
    For each analysis, you'll see:
    - **Confidence Score**: Percentage indicating Real vs. Fake
    - **Classification**: 
@@ -214,7 +218,60 @@ HaoroShi Deeptection tracks your usage to help you understand your scanning patt
 All statistics are stored **locally in your browser**. No data is sent to external servers. You can clear your history at any time using the "Clear All Data" button.
 
 ## 🔬 How It Works
+HaoroShi Deeptection uses a sophisticated multi-step process to detect deepfakes:
 
+### The Detection Pipeline
+```
+📸 Input (Image/Video)
+    ↓
+🔍 Face Detection
+    ↓ (Isolate facial regions)
+🧠 AI Analysis (CNN-Transformer)
+    ↓ (Extract features & patterns)
+📊 Classification
+    ↓ (Real vs. Fake prediction)
+✅ Results + Confidence Score
+```
+
+### Step-by-Step Explanation
+
+1. **Input Capture**
+   - Webpage Mode: Extracts images from HTML
+   - Screenshot Mode: Captures visible screen area
+   - Video Mode: Extracts frames from video stream
+
+2. **Face Detection** (using face-api.js)
+   - Identifies all faces in the image
+   - Extracts facial landmarks (eyes, nose, mouth)
+   - Normalizes face orientation and size
+
+3. **Feature Extraction** (CNN Backbone)
+   - Uses EfficientNet to analyze local patterns
+   - Detects texture anomalies, blending artifacts
+   - Identifies unnatural skin textures, lighting inconsistencies
+
+4. **Global Analysis** (Transformer)
+   - Examines relationships between facial features
+   - Detects temporal inconsistencies (in videos)
+   - Identifies manipulation patterns across the entire face
+
+5. **Artifact Detection**
+   - Searches for common deepfake artifacts:
+     - Unnatural blurring around face boundaries
+     - Color inconsistencies
+     - Compression artifacts in specific regions
+     - Abnormal facial symmetry
+
+6. **Classification & Scoring**
+   - Combines all signals into a final prediction
+   - Outputs confidence score (0-100%)
+   - Classifies as Real, Fake, or Uncertain
+
+### Limitations
+⚠️ **Not 100% Accurate** - Use as a verification tool, not absolute proof  
+⚠️ **Quality Dependent** - Works best with clear, high-resolution images  
+⚠️ **Evolving Threats** - New deepfake techniques may bypass detection  
+⚠️ **Context Matters** - Consider multiple factors when verifying media authenticity
 
 ## 🏗️ Model Architecture
 Model Architecture
@@ -226,13 +283,83 @@ The deepfake detection model uses a hybrid CNN-Transformer architecture:
 - Multi-Task Learning: Dual heads for classification and artifact detection
 - Total Parameters: ~87M parameters
 
-## 📊 Training Details
+## 📚 Training Details
+### Image Detection Model (ImageModel.onnx)
+
+**Dataset:**
+- **Training Set**: 100,000 images
+  - Celeb-DF v2: 50,000 images
+  - JamieWithofs: 50,000 images
+- **Validation Set**: 20,104 images
+- **Test Set**: 10,103 images
+
+**Training Configuration:**
+- **Epochs**: 40
+- **Batch Size**: 16
+- **Learning Rate**: 8e-5 (AdamW optimizer)
+- **Weight Decay**: 0.01
+- **Augmentation**: Mixup, label smoothing (0.1)
+- **Training Time**: ~22 hours (CUDA)
+
+**Performance:**
+- **Test Accuracy**: 94.24%
+- **Best Validation Accuracy**: 96.30%
+- **Precision**: Real 92.40%, Fake 96.23%
+- **Recall**: Real 96.37%, Fake 92.13%
+
+---
+
+### Video Detection Model (VideoModel2.onnx)
+
+**Training Configuration:**
+- **Epochs**: 26
+- **Optimizer**: AdamW
+- **Learning Rate**: 7.07e-4 (adaptive)
+
+**Performance:**
+- **Validation Accuracy**: 84.93%
+- **Validation F1-Score**: 84.93%
+- **Training Accuracy**: 78.77%
+
+**Note:** The video model processes frames sequentially to detect temporal inconsistencies and manipulation patterns across video sequences.
+
+---
+
+### Key Training Techniques (Both Models)
+- Transfer learning with EfficientNet-B0 (ImageNet pretrained)
+- Multi-task learning (classification + artifact detection)
+- Data augmentation for robustness
+- Label smoothing for regularization
 
 ## 📈 Performance
+### Image Detection (ImageModel.onnx)
+- **Test Accuracy**: 94.24%
+- **Validation Accuracy**: 96.30% (best)
+- **Precision**: Real 92.40%, Fake 96.23%
+- **Recall**: Real 96.37%, Fake 92.13%
+- **F1-Score**: 94.24% (weighted average)
+- **Dataset**: Evaluated on Celeb-DF v2 test set (10,103 images)
 
-## Acknowledgement
-- Celeb-DF v2 Dataset: Li et al. - Celeb-DF: A Large-scale Challenging Dataset for DeepFake Forensics
-- JamieWithofs Dataset: Available on Hugging Face
-- EfficientNet: Tan & Le - EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks
-- Vision Transformer: Dosovitskiy et al. - An Image is Worth 16x16 Words
-- ONNX Runtime: Microsoft - ONNX Runtime Web
+### Video Detection (VideoModel2.onnx)
+- **Validation Accuracy**: 84.93%
+- **Validation F1-Score**: 84.93%
+- **Dataset**: Evaluated on video frame sequences
+
+> **Note**: Performance may vary on different datasets and real-world content. The models perform best on high-quality, face-forward images/videos. Video detection analyzes temporal patterns across frames, which can be more challenging than single-image detection.
+
+## 🙏 Acknowledgments
+This project utilizes the following datasets, research contributions, and software tools:
+
+**Datasets:**
+- Li, Y., Yang, X., Sun, P., Qi, H., & Lyu, S. (2020). *Celeb-DF (v2): A large-scale challenging dataset for deepfake forensics* [Data set]. arXiv. https://arxiv.org/abs/1909.12962
+
+- JamieWithofs. (n.d.). *JamieWithofs dataset* [Data set]. Hugging Face. https://huggingface.co/datasets/JamieWithofs
+
+**Research Papers:**
+- Tan, M., & Le, Q. V. (2019). EfficientNet: Rethinking model scaling for convolutional neural networks. *Proceedings of the 36th International Conference on Machine Learning*, 97, 6105-6114. http://proceedings.mlr.press/v97/tan19a.html
+
+- Dosovitskiy, A., Beyer, L., Kolesnikov, A., Weissenborn, D., Zhai, X., Unterthiner, T., Dehghani, M., Minderer, M., Heigold, G., Gelly, S., Uszkoreit, J., & Houlsby, N. (2020). An image is worth 16x16 words: Transformers for image recognition at scale. *arXiv preprint*. https://arxiv.org/abs/2010.11929
+
+**Software:**
+- Microsoft. (n.d.). *ONNX Runtime Web* [Computer software]. ONNX Runtime. https://onnxruntime.ai/docs/tutorials/web/
+
