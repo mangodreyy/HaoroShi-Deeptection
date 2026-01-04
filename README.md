@@ -37,7 +37,7 @@ A real-time deepfake detection browser extension powered by a hybrid CNN-Transfo
 ## 🚀 Quick Start
 Get started with HaoroShi Deeptection in 3 simple steps:
 1. **Download** the extension files from this repository
-2. **Load** the extension in your browser (see [Installation](#installation) for browser-specific steps)
+2. **Load** the extension in your browser (see [Installation](#-installation) for browser-specific steps)
 3. **Activate** by clicking the extension icon and start analysing!
 
 
