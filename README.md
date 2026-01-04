@@ -48,7 +48,7 @@ Get started with HaoroShi Deeptection in 3 simple steps:
 
 ### Step 1: Download the Extension
 
-1. Go to the [**Releases**](https://github.com/yourusername/haoroshi-deeptection/releases) page
+1. Go to the [**Releases**](https://github.com/mangodreyy/HaoroShi-Deeptection/releases/tag/HaoroshiDeeptection_v.1.0.0) page
 <img width="1920" height="1080" alt="11" src="https://github.com/user-attachments/assets/a1b855b2-5fc8-439b-a586-1c81369992d1" />
 <img width="1920" height="1080" alt="12" src="https://github.com/user-attachments/assets/c6658add-c732-4858-8f34-da5f0755a001" />
 2. Download the **latest release** (`.zip` file)
