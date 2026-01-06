@@ -360,20 +360,3 @@ The deepfake detection model uses a hybrid CNN-Transformer architecture:
 - **Dataset**: Evaluated on video frame sequences
 
 > **Note**: Performance may vary on different datasets and real-world content. The models perform best on high-quality, face-forward images/videos. Video detection analyses temporal patterns across frames, which can be more challenging than single-image detection.
-
-## 🙏 Acknowledgments
-This project utilises the following datasets, research contributions, and software tools:
-
-**Datasets:**
-- Li, Y., Yang, X., Sun, P., Qi, H., & Lyu, S. (2020). *Celeb-DF (v2): A large-scale challenging dataset for deepfake forensics* [Data set]. arXiv. https://arxiv.org/abs/1909.12962
-
-- JamieWithofs. (n.d.). *JamieWithofs dataset* [Data set]. Hugging Face. https://huggingface.co/datasets/JamieWithofs
-
-**Research Papers:**
-- Tan, M., & Le, Q. V. (2019). EfficientNet: Rethinking model scaling for convolutional neural networks. *Proceedings of the 36th International Conference on Machine Learning*, 97, 6105-6114. http://proceedings.mlr.press/v97/tan19a.html
-
-- Dosovitskiy, A., Beyer, L., Kolesnikov, A., Weissenborn, D., Zhai, X., Unterthiner, T., Dehghani, M., Minderer, M., Heigold, G., Gelly, S., Uszkoreit, J., & Houlsby, N. (2020). An image is worth 16x16 words: Transformers for image recognition at scale. *arXiv preprint*. https://arxiv.org/abs/2010.11929
-
-**Software:**
-- Microsoft. (n.d.). *ONNX Runtime Web* [Computer software]. ONNX Runtime. https://onnxruntime.ai/docs/tutorials/web/
-
